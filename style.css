@@ -1,48 +1,60 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     font-family: 'Karla', sans-serif;
 }
+
+:root {
+
+    --txt-color: #fff;
+    --p-color: #D5D4D8;
+    --span-color: #4ADF86;
+    --generate-btn-color: #10B981;
+    --container-color: #1F2937;
+    --line-color: #2F3E53;
+}
+
 html {
     height: 100%;
 
 }
 
 h1,
-span{
+span {
     font-family: 'Karla';
     font-size: 40px;
     font-weight: 800;
-    line-height: 40px; /* 100% */
-    letter-spacing: -1px; 
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: -1px;
 }
 
 h1,
-.generate-btn{
-    color: var(--white, #FFF);
+.generate-btn {
+    color: var(--txt-color);
 }
 
-p{
-    color: var(--Medium-grey, #D5D4D8);
+p {
+    color: var(--p-color);
     font-family: 'Inter';
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     white-space: nowrap;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
-span{
+span {
     display: block;
-    color: #4ADF86; 
+    color: var(--span-color);
 }
 
-.generate-btn{
-    margin-top:51px;
+.generate-btn {
+    margin-top: 51px;
     border-radius: 6px;
-    background: #10B981;
+    background: var(--generate-btn-color);
     padding: 9px 17px;
-    border:none;
+    border: none;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -51,55 +63,60 @@ span{
 
 
 
-.header{
-    margin:115px 144px 35px 52px;
-    
+.header {
+    margin: 115px 144px 35px 52px;
+
 }
 
 
 
-.container{
-    height:100vh;
+.container {
+    height: 100vh;
     background: #1C1C1C;
-    display:flex;
-    
+    display: flex;
+
 }
 
-.generator-container{
-    margin:auto;
+.generator-container {
+    margin: auto;
     width: 550px;
-    height: 550px; 
-    background: #1F2937; 
-    display:flex;
+    height: 550px;
+    background: var(--container-color);
+    display: flex;
     flex-direction: column;
-    
+
 }
 
-.line{
+.line {
     width: 446px;
-    height: 1px;    
-    margin:0 auto;
-    background: #2F3E53; 
+    height: 1px;
+    margin: 0 auto;
+    background: #2F3E53;
 
 }
 
-.output-area{
-    margin-top:35px;
-    margin-left:52px;
-    gap:24px;
-    display:flex;
+.output-area {
+    margin-top: 35px;
+    margin-left: 52px;
+    gap: 24px;
+    display: flex;
 }
 
-input{
+input {
     border-radius: 6px;
-    border:none;
-    background: #273549; 
+    border: none;
+    background: #273549;
     width: 211px;
     height: 39px;
-    color: #55F991;
+    color: var(--generate-btn-color);
     text-align: center;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 32px;
+}
+
+.theme-toggle {
+    align-self: flex-end;
+    margin-right: 10px;
 }
