@@ -3,6 +3,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 const generateBtn = document.getElementById("generate-btn")
 const output1 = document.getElementById("output1")
 const output2 = document.getElementById("output2")
+const toggle = document.getElementById("toggle");
+const icon = document.getElementById("icon")
 let range = Math.floor(Math.random() * (20 - 8) + 8);
 
 function generatePass() {
@@ -18,4 +20,14 @@ generateBtn.addEventListener("click", () => {
     let pass2 = generatePass();
     output1.value = pass1;
     output2.value = pass2;
+})
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    if (document.body.classList.contains("light-mode")) {
+        icon.src = "./moon.png";
+
+    } else {
+         icon.src = "./sun.png";
+    }
 })
